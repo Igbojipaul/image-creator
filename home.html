@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Creator</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Image Creator</h1>
+      <button id="btn-seemore">Create a customized image</button>
+    </div>
+
+    <div id="templatesH" class="templates">
+      <div class="template">
+        <button class="fixed-image"><img class="img" src="images/template1.jfif" ></button>
+      </div>
+      <div class="template">
+        <button class="fixed-image"><img class="img" src="images/template2.jfif" ></button>
+      </div>
+      <div class="template">
+        <button class="fixed-image"><img class="img" src="images/template3.jfif" ></button>
+      </div>
+      <div class="template">
+        <button class="fixed-image"><img class="img" src="images/template4.jfif" ></button>
+      </div>
+    </div>
+
+    <div id="custom" class="custom-section">
+      <h2 >Customize your own text image</h2>
+      <input type="file" id="uploadImage" class="upload-btn">
+      <button class="text-add">Add text</button>
+      <textarea name="image-text" class="text" placeholder="Enter your text here..."></textarea>
+      <button id="submit" class="create-btn">Create</button>
+    </div>
+
+    <div class="image-container">
+      <img id="myImage" src="" >
+      <div class="text-overlay"></div>
+    </div>
+
+    <button id="downloadBtn" class="download-btn">Download Image</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
